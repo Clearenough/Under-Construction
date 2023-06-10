@@ -3,6 +3,7 @@ import Brand from './components/Brand/Brand';
 import Curtains from './components/Curtains/Curtains';
 import Motto from './components/Motto/Motto';
 import Countdown from './components/Countdown/Countdown';
+import EventsButton from './components/EventsButton/EventsButton';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Brand />
       <Motto />
       <Countdown />
+      <EventsButton />
     </Layout>
   );
 }
