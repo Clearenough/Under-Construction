@@ -1,0 +1,13 @@
+@import './../../style/constants.scss';
+
+.time {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 100%;
+  color: $main-color;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}

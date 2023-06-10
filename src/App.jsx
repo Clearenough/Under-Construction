@@ -2,6 +2,7 @@ import Layout from './components/Layout/Layot';
 import Brand from './components/Brand/Brand';
 import Curtains from './components/Curtains/Curtains';
 import Motto from './components/Motto/Motto';
+import Countdown from './components/Countdown/Countdown';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Curtains />
       <Brand />
       <Motto />
+      <Countdown />
     </Layout>
   );
 }
