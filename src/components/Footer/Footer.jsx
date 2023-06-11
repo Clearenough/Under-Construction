@@ -42,7 +42,7 @@ function Footer() {
   }
 
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <form className={styles.form} onSubmit={onSubmit}>
         <input
           className={styles.input}
@@ -56,7 +56,7 @@ function Footer() {
           onChange={onChange}
         />
         <button className={styles.button} type="submit">
-          <img src={arrow} alt="submit" />
+          <img className={styles.rightArrow} src={arrow} alt="submit" />
         </button>
       </form>
       <button className={styles.event}>
@@ -66,7 +66,7 @@ function Footer() {
       {isModalOpen && (
         <Popup isError={isValid} setIsModalOpen={setIsModalOpen} />
       )}
-    </div>
+    </footer>
   );
 }
 
