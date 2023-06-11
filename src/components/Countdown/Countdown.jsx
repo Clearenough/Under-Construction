@@ -17,7 +17,6 @@ const accordanceSmallScreen = [dd, '', hh, '', mm, '', ss];
 function Countdown() {
   const [date, setDate] = useState();
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  console.log(screenWidth);
 
   const countDownDate = new Date('July 5, 2023 00:00:00').getTime();
 
