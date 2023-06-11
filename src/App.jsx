@@ -4,15 +4,19 @@ import Curtains from './components/Curtains/Curtains';
 import Motto from './components/Motto/Motto';
 import Countdown from './components/Countdown/Countdown';
 import EventsButton from './components/EventsButton/EventsButton';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <Layout>
-      <Curtains />
-      <Brand />
-      <Motto />
-      <Countdown />
-      <EventsButton />
+      <div>
+        <Curtains />
+        <Brand />
+        <Motto />
+        <Countdown />
+        <EventsButton />
+      </div>
+      <Footer />
     </Layout>
   );
 }

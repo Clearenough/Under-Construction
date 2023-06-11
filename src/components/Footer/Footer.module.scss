@@ -1,0 +1,58 @@
+@import './../../style/constants.scss';
+
+.footer {
+  position: relative;
+  height: 192px;
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  .form {
+    width: 440px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .input {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      line-height: 150%;
+      width: 320px;
+      border-radius: 40px;
+      padding: 16px 27px;
+    }
+
+    .button {
+      background-color: $red-color;
+      width: 43px;
+      height: 43px;
+      border-radius: 100%;
+      margin-right: 8px;
+    }
+  }
+
+  .event {
+    cursor: pointer;
+    position: absolute;
+    right: 111px;
+    top: 50%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: transparent;
+    font-size: 20px;
+    line-height: 150%;
+    color: $background-color;
+    transform: translateY(-50%);
+
+    .arrow {
+      transform: rotate(90deg);
+    }
+  }
+}

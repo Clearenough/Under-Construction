@@ -14,7 +14,6 @@ function Countdown() {
       const difference = countDownDate - now;
       const newDate = splitDate(difference);
       setDate(newDate);
-      console.log(date);
     }, 1000);
     return () => clearInterval(interval);
   });

@@ -4,7 +4,7 @@ function Layout({ children }) {
   console.log(styles);
   return (
     <div className={styles.container}>
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
     </div>
   );
 }
