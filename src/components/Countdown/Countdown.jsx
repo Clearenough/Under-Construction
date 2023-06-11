@@ -52,7 +52,7 @@ function Countdown() {
               {el}
               <img
                 src={
-                  screenWidth < 769
+                  screenWidth < 1026
                     ? accordanceSmallScreen[index]
                     : accordanceLargeScreen[index]
                 }
