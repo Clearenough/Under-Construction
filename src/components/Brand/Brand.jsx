@@ -4,7 +4,7 @@ import styles from './Brand.module.scss';
 function Brand() {
   return (
     <div className={styles.brand}>
-      <img src={logo} alt="Logo" />
+      <img className={styles.logo} src={logo} alt="Logo" />
     </div>
   );
 }
