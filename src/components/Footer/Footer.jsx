@@ -1,9 +1,11 @@
 import arrow from './../../assets/arrow-right.svg';
 import styles from './Footer.module.scss';
+import Popup from '../Popup/Popup';
 
 import { useState } from 'react';
 
 function Footer() {
+  const [isEmailEmpty, setIsEmailEmpty] = useState(false);
   const [email, setEmail] = useState('');
   const [isValid, setIsValid] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,6 +21,10 @@ function Footer() {
 
   function onSubmit(e) {
     e.preventDefault();
+    if (!email) {
+      setIsEmailEmpty(true);
+      return;
+    }
     const promise = getDataFromServer();
     promise
       .then(() => {
@@ -41,7 +47,11 @@ function Footer() {
         <input
           className={styles.input}
           type="email"
-          placeholder="Enter your Email and get notified"
+          placeholder={
+            isEmailEmpty
+              ? 'Enter Email!!!'
+              : 'Enter your Email and get notified'
+          }
           value={email}
           onChange={onChange}
         />
@@ -53,6 +63,9 @@ function Footer() {
         Other Events
         <img className={styles.arrow} src={arrow} alt="arrow down" />
       </button>
+      {isModalOpen && (
+        <Popup isError={isValid} setIsModalOpen={setIsModalOpen} />
+      )}
     </div>
   );
 }
